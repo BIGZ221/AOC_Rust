@@ -1,6 +1,7 @@
 mod day_one;
 use day_one::DayOne;
 mod day_two;
+use day_two::DayTwo;
 
 use super::{Challenge, Year};
 
@@ -10,6 +11,7 @@ impl Year for Year2015 {
     fn execute(day: u32, input: String) {
         match day {
             1 => DayOne::default().run(input),
+            2 => DayTwo::default().run(input),
             _ if day <= 25 => todo!("Day not implemented"),
             _ => panic!("Day out of range"),
         }

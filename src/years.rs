@@ -2,7 +2,7 @@ mod yr_2015;
 use yr_2015::Year2015;
 
 pub trait Challenge {
-    fn run(&self, input: String);
+    fn run(&mut self, input: String);
     fn part1(&self, input: &String);
     fn part2(&self, input: &String);
 }

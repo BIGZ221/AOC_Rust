@@ -4,7 +4,7 @@ use crate::years::Challenge;
 pub struct DayOne;
 
 impl Challenge for DayOne {
-    fn run(&self, input: String) {
+    fn run(&mut self, input: String) {
         self.part1(&input);
         self.part2(&input);
     }
