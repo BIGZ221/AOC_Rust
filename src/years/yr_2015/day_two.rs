@@ -25,7 +25,7 @@ impl Challenge for DayTwo {
 
     fn part2(&self, _input: &String) {
         println!(
-            "Part 1: {}",
+            "Part 2: {}",
             self.boxes
                 .iter()
                 .fold(0, |acc, val| acc + val.min_perimeter() + val.volume())
