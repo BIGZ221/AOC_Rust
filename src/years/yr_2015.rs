@@ -6,6 +6,8 @@ mod day_three;
 use day_three::DayThree;
 mod day_four;
 use day_four::DayFour;
+mod day_five;
+use day_five::DayFive;
 
 use super::{Challenge, Year};
 
@@ -18,6 +20,7 @@ impl Year for Year2015 {
             2 => DayTwo::default().run(input),
             3 => DayThree::default().run(input),
             4 => DayFour::default().run(input),
+            5 => DayFive::default().run(input),
             _ if day <= 25 => todo!("Day not implemented"),
             _ => panic!("Day out of range"),
         }
