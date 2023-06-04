@@ -8,7 +8,7 @@ impl Challenge for DayOne {
         self.part1(&input);
         self.part2(&input);
     }
-    fn part1(&self, input: &String) {
+    fn part1(&mut self, input: &String) {
         let mut floor: i32 = 0;
         for c in input.chars() {
             match c {
@@ -19,7 +19,7 @@ impl Challenge for DayOne {
         }
         println!("Answer: {}", floor);
     }
-    fn part2(&self, input: &String) {
+    fn part2(&mut self, input: &String) {
         let mut floor: i32 = 0;
         for (i, c) in input.chars().enumerate() {
             match c {

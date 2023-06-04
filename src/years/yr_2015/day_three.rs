@@ -17,11 +17,11 @@ impl Challenge for DayThree {
         self.part2(&input)
     }
 
-    fn part1(&self, input: &String) {
+    fn part1(&mut self, input: &String) {
         println!("Part 1: {}", get_visits(input).len());
     }
 
-    fn part2(&self, input: &String) {
+    fn part2(&mut self, input: &String) {
         let santa: String = input.chars().step_by(2).collect();
         let robot: String = input.chars().skip(1).step_by(2).collect();
         let visited_by_santa = get_visits(&santa);

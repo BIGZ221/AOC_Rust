@@ -3,8 +3,8 @@ use yr_2015::Year2015;
 
 pub trait Challenge {
     fn run(&mut self, input: String);
-    fn part1(&self, input: &String);
-    fn part2(&self, input: &String);
+    fn part1(&mut self, input: &String);
+    fn part2(&mut self, input: &String);
 }
 
 pub trait Year {

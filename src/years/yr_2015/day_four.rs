@@ -11,7 +11,7 @@ impl Challenge for DayFour {
         self.part2(&input);
     }
 
-    fn part1(&self, input: &String) {
+    fn part1(&mut self, input: &String) {
         let mut count: u32 = 0;
         loop {
             let hash = format!("{:x}", md5::compute(format!("{}{}", input, count)));
@@ -23,7 +23,7 @@ impl Challenge for DayFour {
         println!("Part 1: {}", count);
     }
 
-    fn part2(&self, input: &String) {
+    fn part2(&mut self, input: &String) {
         let mut count: u32 = 0;
         loop {
             let hash = format!("{:x}", md5::compute(format!("{}{}", input, count)));

@@ -14,7 +14,7 @@ impl Challenge for DayTwo {
         self.part2(&input);
     }
 
-    fn part1(&self, _input: &String) {
+    fn part1(&mut self, _input: &String) {
         println!(
             "Part 1: {}",
             self.boxes
@@ -23,7 +23,7 @@ impl Challenge for DayTwo {
         );
     }
 
-    fn part2(&self, _input: &String) {
+    fn part2(&mut self, _input: &String) {
         println!(
             "Part 2: {}",
             self.boxes

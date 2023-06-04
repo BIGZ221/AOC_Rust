@@ -11,7 +11,7 @@ impl Challenge for DayFive {
         self.part2(&input);
     }
 
-    fn part1(&self, input: &String) {
+    fn part1(&mut self, input: &String) {
         let mut count = 0;
         for line in input.trim().split("\n") {
             let line = line.to_string();
@@ -23,7 +23,7 @@ impl Challenge for DayFive {
         println!("Part 1: {}", count);
     }
 
-    fn part2(&self, input: &String) {
+    fn part2(&mut self, input: &String) {
         let mut count = 0;
         for line in input.trim().split("\n") {
             let line = line.to_string();
